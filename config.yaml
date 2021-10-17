@@ -1,0 +1,101 @@
+    # Project definitions (do not edit)
+Task: Tadpole DeepLabCut
+scorer: Thomas
+date: Sep25
+multianimalproject: true
+identity: false
+
+    # Project path (change when moving around)
+project_path: /Users/beta/codes/DeepLabCut/conda-environments/Tadpole DeepLabCut-Thomas-2021-09-25
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/beta/codes/DeepLabCut/conda-environments/Tadpole DeepLabCut-Thomas-2021-09-25/videos/short.mov:
+    crop: 0, 1080, 0, 1920
+individuals:
+- individual1
+- individual2
+- individual3
+- individual4
+- individual5
+- individual6
+- individual7
+- individual8
+- individual9
+- individual10
+- individual11
+- individual12
+- individual13
+- individual14
+- individual15
+- individual16
+- individual17
+- individual18
+- individual19
+- individual20
+- individual21
+- individual22
+- individual23
+- individual24
+- individual25
+- individual26
+- individual27
+- individual28
+- individual29
+- individual30
+- individual31
+- individual32
+- individual33
+- individual34
+- individual35
+- individual36
+- individual37
+uniquebodyparts: []
+multianimalbodyparts:
+- tail1
+- tail2
+- tail3
+- lefteye
+- righteye
+- body
+skeleton:
+- - bodypart1
+  - bodypart2
+- - bodypart2
+  - bodypart3
+- - bodypart1
+  - bodypart3
+bodyparts: MULTI!
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 1
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: dlcrnet_ms5
+default_augmenter: multi-animal-imgaug
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
